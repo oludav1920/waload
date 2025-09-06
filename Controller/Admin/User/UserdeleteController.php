@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Register/UserDelete.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/User/UserDelete.php");
 
 if(isset($_GET["user"])){
     $usertodelete = trim(htmlspecialchars($_GET["user"]));

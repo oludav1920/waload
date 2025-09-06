@@ -51,7 +51,7 @@ if(isset($_GET["net"])){
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/PaymenteditController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Paymentgateway/PaymenteditController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">Payment_Gateway:</label></br>
     <select id="net" name="net" class="input">
         <option value="<?php echo $pay; ?>"><?php echo $pay ?></option>

@@ -63,7 +63,7 @@
         ?>
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/RegisterController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Register/RegisterController.php" method="POST" enctype="multipart/form-data" >
    <P><tr><label class="lab">FULLNAME:</label><br/>
     <input type="text" name="fname" class="input" placeholder="type your fullname"/><br/></P><hr/>
    <P><label  class="lab">USERNAME:</label><br/>

@@ -63,7 +63,7 @@
         ?>
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/AdminRegController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/RegisterAdmin/AdminRegController.php" method="POST" enctype="multipart/form-data" >
     <P><tr><label class="lab">FULLNAME:</label><br/>
     <input type="text" name="fname" class="input" placeholder="type your fullname"/><br/></P><hr/>
     <P><label  class="lab">EMAIL:</label><br/>

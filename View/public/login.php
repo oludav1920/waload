@@ -60,7 +60,7 @@
         </div>
 
     <fieldset class="divr" >
-<form action="/Controller/LoginController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Login/LoginController.php" method="POST" enctype="multipart/form-data" >
 <P><tr><label class="lab">EMAIL:</label><br/>
 <input type="text" name="semail" class="input"/ placeholder="insert your registered email" ><br/></P><hr/>
 <P><label class="lab">PASSWORD:</label><br/>

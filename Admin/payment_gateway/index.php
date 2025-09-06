@@ -5,7 +5,7 @@
 
  <div class="columns2-unequal-middle-div white-bg">
     <?php
-    include($_SERVER['DOCUMENT_ROOT']."/Controller/Paymentfetch.php");
+    include($_SERVER['DOCUMENT_ROOT']."/Controller/Admin/Paymentgateway/Paymentfetch.php");
     $backendResponseDecode = json_decode($backendResponse, true);
     if($backendResponseDecode["status"] =="success"){
         $response=$backendResponseDecode["response"];
@@ -58,7 +58,7 @@
         echo '</a>';
         echo '</td>';
         echo '<td>';
-        echo '<a href="/Controller/Paymentdelete.php?user='.$ind.'">';
+        echo '<a href="/Controller/Admin/Paymentgateway/Paymentdelete.php?user='.$ind.'">';
         echo '<button>Delete</button>';
         echo '</a>';
         echo '</td>';

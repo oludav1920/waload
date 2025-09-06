@@ -58,7 +58,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/tables.php");
     }
     ?>
     <fieldset class="divr" >
-<form action="/Controller/ForgetPassController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/ForgetPassword/ForgetPassController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">EMAIL:</label><br/>
     <input type="text" class="input" name="semail" value="<?php if(isset($_GET["email"])){ echo htmlspecialchars($_GET["email"]); } ?>"/></p>
     <P><label class="lab">OTP:</label><br/>

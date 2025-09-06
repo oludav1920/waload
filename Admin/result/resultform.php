@@ -19,7 +19,7 @@
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/ResultController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Result/ResultController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">ResultPlan:</label></br>
     <select id="net" name="net" class="input">
         <option value="">Choose One</option><hr/>

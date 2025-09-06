@@ -52,7 +52,7 @@
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/UsereditController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/User/UsereditController.php" method="POST" enctype="multipart/form-data" >
    <P><tr><label class="lab">FULLNAME:</label><br/>
     <input type="text" name="fname" class="input" value="<?php echo $full; ?>"/><br/></P><hr/>
    <P><label  class="lab">USERNAME:</label><br/>

@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Query/Admin/Register/Userfetch.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Query/Admin/User/Userfetch.php");
 //if($_SERVER["REQUEST_METHOD"] ==="POST"){
         /*$net= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) : "";
         $sta= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['status'])))) ?? "";

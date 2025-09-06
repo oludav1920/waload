@@ -20,7 +20,7 @@
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/PaymentController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Paymentgateway/PaymentController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">Payment_Gateway:</label></br>
     <select id="net" name="net" class="input">
         <option value="">Choose One</option>

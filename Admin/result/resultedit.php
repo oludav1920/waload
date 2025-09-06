@@ -52,7 +52,7 @@
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/ResulteditController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Result/ResulteditController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">ResultPlan:</label></br>
     <select id="net" name="net" class="input">
         <option value="<?php echo $nat; ?>"><?php echo $nat; ?></option><hr/>

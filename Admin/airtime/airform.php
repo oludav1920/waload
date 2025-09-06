@@ -27,7 +27,7 @@
         ?>
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/AirtimePlanController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Airtime/AirtimePlanController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">Network:</label></br>
     <select id="net" name="net" class="input">
         <option value="">Choose One</option>

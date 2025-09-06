@@ -6,7 +6,7 @@
  <div class="columns2-unequal-middle-div white-bg">      
     <?php
     echo "<hr/>";
-        include($_SERVER["DOCUMENT_ROOT"]."/Controller/ApiqController.php");
+        include($_SERVER["DOCUMENT_ROOT"]."/Controller/Admin/Api/ApiqController.php");
         $backendResponseDecode = json_decode($backendResponse, true);
         if($backendResponseDecode["status"] =="success"){
             $response = $backendResponseDecode["response"];

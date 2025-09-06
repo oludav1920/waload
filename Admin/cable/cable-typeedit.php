@@ -52,7 +52,7 @@
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/CabletypeeditController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Cable/CabletypeeditController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">CableType:</label></br>
     <select id="net" name="net" class="input">
         <option value="<?php echo $nat; ?>"><?php echo $nat; ?></option>

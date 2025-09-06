@@ -20,7 +20,7 @@
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/CableplanController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Cable/CableplanController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">CablePlan:</label></br>
     <select id="net" name="net" class="input">
         <option value="">Choose One</option>

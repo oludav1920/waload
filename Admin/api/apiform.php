@@ -27,7 +27,7 @@
         ?>
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/ApiController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Api/ApiController.php" method="POST" enctype="multipart/form-data" >
    <P><tr><label class="lab">APINAME:</label><br/>
     <input type="text" name="apiname" class="input" placeholder="type your apiname"/><br/></P><hr/>
    <P><label  class="lab">APIKEY:</label><br/>

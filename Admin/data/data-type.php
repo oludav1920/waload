@@ -6,7 +6,7 @@
  <div class="columns2-unequal-middle-div white-bg">      
     <?php
     echo "<hr/>";
-        include($_SERVER["DOCUMENT_ROOT"]."/Controller/DatatypefetchController.php");
+        include($_SERVER["DOCUMENT_ROOT"]."/Controller/Admin/Data/DatatypefetchController.php");
         $backendResponseDecode = json_decode($backendResponse, true);
         if($backendResponseDecode["status"] =="success"){
             $response = $backendResponseDecode["response"];
@@ -70,7 +70,7 @@
                 echo '</a>';
                 echo '</td>';
                 echo '<td>'; 
-                echo '<a href="/Controller/DatatypedeleteController.php?user='.$ind.'">';
+                echo '<a href="/Controller/Admin/Data/DatatypedeleteController.php?user='.$ind.'">';
                 echo '<button>Delete</button>';
                 echo '</a>';
                 echo '</td>';

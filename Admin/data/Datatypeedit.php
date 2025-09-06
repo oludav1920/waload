@@ -54,7 +54,7 @@
 
         </div>
         <fieldset class="divr" style="">
-<form action="/Controller/DatatypeeditController.php" method="POST" enctype="multipart/form-data" >
+<form action="/Controller/Admin/Data/DatatypeeditController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">Network:</label></br>
     <select id="net" name="net" class="input">
         <option value="<?php echo $nat; ?>"><?php echo $nat; ?></option>

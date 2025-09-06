@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Register/UserEdit.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/User/UserEdit.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["edit_user"])){
         $fname= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['fname'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['fname'])))) : "";

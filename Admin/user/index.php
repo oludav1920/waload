@@ -9,7 +9,7 @@
 
     <?php
     echo "<hr/>";
-        include($_SERVER["DOCUMENT_ROOT"]."/Controller/UserfetchController.php");
+        include($_SERVER["DOCUMENT_ROOT"]."/Controller/Admin/User/UserfetchController.php");
         $backendResponseDecode = json_decode($backendResponse, true);
         if($backendResponseDecode["status"] =="success"){
             $response = $backendResponseDecode["response"];
@@ -85,7 +85,7 @@
                 echo '</a>';
                 echo '</td>';
                 echo '<td>'; 
-                echo '<a href="/Controller/UserdeleteController.php?user='.$disto.'">';
+                echo '<a href="/Controller/Admin/User/UserdeleteController.php?user='.$disto.'">';
                 echo '<button>Delete</button>';
                 echo '</a>';
                 echo '</td>';
