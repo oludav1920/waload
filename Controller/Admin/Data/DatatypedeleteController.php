@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Data/Query/Datatypedelete.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Data/Datatypedelete.php");
 
 if(isset($_GET["user"])){
     $datatypetodelete = trim(htmlspecialchars($_GET["user"]));

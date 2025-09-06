@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Paymentgateway/Command/Paymentplan.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Paymentgateway/Paymentplan.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST['payment'])){
         $pay= trim(htmlspecialchars(strtolower(str_replace(","," ", $_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ", $_POST['net'])))) : "";

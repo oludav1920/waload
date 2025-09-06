@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Result/Query/Resultedit.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Result/Resultedit.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["resultedit"])){
         $net= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) : "";

@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Cable/Query/Cabletypedelete.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Cable/Cabletypedelete.php");
 
 if(isset($_GET["user"])){
     $cabletypetodelete = trim(htmlspecialchars($_GET["user"]));

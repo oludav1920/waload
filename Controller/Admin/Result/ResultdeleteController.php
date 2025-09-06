@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Result/Query/Resultdelete.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Result/Resultdelete.php");
 
 if(isset($_GET["user"])){
     $resulttodelete = trim(htmlspecialchars($_GET["user"]));

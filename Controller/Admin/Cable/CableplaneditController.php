@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Cable/Query/Cableplanedit.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Cable/Cableplanedit.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["cable_planedit"])){
         $nato= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) ?? "";

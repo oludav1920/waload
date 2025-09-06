@@ -1,6 +1,6 @@
 <?php
 session_start();
-include($_SERVER["DOCUMENT_ROOT"]."/LoginAdmin/Query/LoginAdmin.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Query/Admin/LoginAdmin/LoginAdmin.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["adminlog_user"])){
         $email= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['semail'])))) ?? "";

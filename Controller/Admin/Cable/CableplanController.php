@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Cable/Command/Cableplan.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Cable/Cableplan.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["cable_plan"])){
         $net= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) : "";

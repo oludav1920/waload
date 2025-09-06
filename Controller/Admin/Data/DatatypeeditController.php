@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Data/Query/Datatypeedit.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Data/Datatypeedit.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["data_typeedit"])){
         $net= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) : "";

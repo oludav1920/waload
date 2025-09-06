@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Data/Query/Dataplanedit.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Data/Dataplanedit.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["data_planedit"])){
         $net= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) : "";

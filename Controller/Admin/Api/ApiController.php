@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Api/Command/apiform.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Api/apiform.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["api_submit"])){
         $apin= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['apiname'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['apiname'])))) : "";

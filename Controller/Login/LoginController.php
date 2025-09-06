@@ -1,6 +1,6 @@
 <?php
 session_start();
-include($_SERVER["DOCUMENT_ROOT"]."/Login/Query/Login.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Query/Login/Login.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["login_user"])){
         $email= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['semail'])))) ?? "";

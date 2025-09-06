@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Airtime/Query/Airtimedelete.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Airtime/Airtimedelete.php");
 
 if(isset($_GET["user"])){
     $airtimetodelete = trim(htmlspecialchars($_GET["user"]));

@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Register/Command/Register.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Register/Register.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["register_user"])){
         $fname= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['fname'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['fname'])))) : "";

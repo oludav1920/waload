@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Airtime/Query/Airtimeedit.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Airtime/Airtimeedit.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["airtime_edit"])){
         $nato= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) ?? "";

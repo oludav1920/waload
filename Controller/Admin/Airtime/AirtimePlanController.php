@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Airtime/Command/airtimePlan.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Airtime/airtimePlan.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["airtime_plan"])){
         $net= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) : "";

@@ -1,13 +1,13 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/RegisterAdmin/RegisterAdmin.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/ForgetPassword/forgetpassword.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
-    if(isset($_POST["adminreg_user"])){
-        $fname= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['fname'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['fname'])))) : "";
+    if(isset($_POST["pass_user"])){
         $email= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['semail'])))) ?? "";
-        $code= trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['code'])))) ?? "";
         $pass= $_POST['ypass'];
+        $passy=$_POST['passy'];
+        $otp=$_POST['otp'];
         
-        $backendResponse = $newAdminRegister->userAdminRegister($fname, $email, $code, $pass);
+        $backendResponse = $newPass->userPass($email, $pass, $passy, $otp);
         $backendResponseDecode = json_decode($backendResponse, true);
         if($backendResponseDecode["status"] =="success"){
             echo $backendResponseDecode["response"];

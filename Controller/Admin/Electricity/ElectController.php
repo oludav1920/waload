@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Electricity/Command/Electricity.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Electricity/Electricity.php");
 if($_SERVER["REQUEST_METHOD"] ==="POST"){
     if(isset($_POST["elect"])){
         $net= trim(htmlspecialchars(strtoupper(str_replace(","," ",$_POST['net'])))) ? trim(htmlspecialchars(strtolower(str_replace(","," ",$_POST['net'])))) : "";

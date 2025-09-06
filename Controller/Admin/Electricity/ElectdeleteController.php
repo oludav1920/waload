@@ -1,5 +1,5 @@
 <?php
-include($_SERVER["DOCUMENT_ROOT"]."/Electricity/Query/Electdelete.php");
+include($_SERVER["DOCUMENT_ROOT"]."/Command/Admin/Electricity/Electdelete.php");
 
 if(isset($_GET["user"])){
     $electtodelete = trim(htmlspecialchars($_GET["user"]));
