@@ -1,0 +1,367 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.div1{
+    border-radius: 10px; 
+    background-color: navy;
+    color: aliceblue; 
+    height: 10%;
+    width: 100%;
+}
+
+.sp1{
+    margin-left: 20px; 
+    margin-top: 10px;
+    color: aliceblue;
+}
+.td1{
+    text-decoration: none;
+     color:aliceblue; 
+     margin-left: -100px;
+}
+.sp2{
+    margin-left: 20px;
+    color: aliceblue;
+}
+.b1{
+    border-radius: 10px; 
+    margin-left: -110px;
+}
+
+.div2{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:80px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.sp3{
+    font-size: large; 
+    margin-top: 100px;
+}
+.sp4{
+     font-size: larger;
+}
+
+.div3{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:150px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.b2{
+    margin-top: 10px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.b22{
+    margin-top: 10px; 
+    color: navy;
+    text-decoration: none;
+}
+.b3{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.b33{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+.b4{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.b44{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+.b5{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+
+.b55{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+.div4{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:80px; 
+    border-radius: 10px;
+    width: 100%;
+    
+}
+.ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ll{
+    margin-top: 10px;
+}
+
+.div5{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:90px; 
+    border-radius: 10px;
+    width: 100%;
+}
+
+.div6{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:50px; 
+    width: 100%;
+   /* position: fixed;
+    bottom: 0;
+    left: 0;
+    */
+}
+
+
+/*REG CSS*/
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card-header{
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.card-body{
+    padding: 20px;
+}
+.cs{
+    border-radius: 90px; 
+    width: 20%; 
+    height: 10%; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.cs:hover{
+    background-color: aliceblue;
+    color: navy;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+@media (max-width:760px) and (min-width:400px) {
+    body{
+        background-color: rgb(115, 92, 245);
+
+    }
+
+    
+.div1{
+    top: 1;
+    min-width: 100%; 
+    border-radius: 10px; 
+    background-color: navy;
+    color: aliceblue; 
+    height: 60px; 
+    margin-top: 10px;
+   /* position: fixed;
+    top: 0;
+    left: 0; 
+    */
+}
+
+.sp1{
+    margin-left: 20px; 
+    margin-top: 10px;
+    color: aliceblue;
+}
+.td1{
+    text-decoration: none;
+     color:aliceblue; 
+     margin-left: -100px;
+}
+.sp2{
+    margin-left: 20px;
+    color: aliceblue;
+}
+.b1{
+    border-radius: 10px; 
+    margin-left: -110px;
+}
+
+.div2{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:80px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.sp3{
+    font-size: larger; 
+    margin-top: 100px;
+}
+.sp4{
+     font-size: larger;
+}
+
+.div3{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:150px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.b2{
+    margin-top: 10px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.b22{
+    margin-top: 10px; 
+    color: navy;
+    text-decoration: none;
+}
+.b3{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.b33{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+.b4{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.b44{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+.b5{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+
+.b55{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+.div4{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:80px; 
+    border-radius: 10px;
+    width: 100%;
+    
+}
+.ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ull{
+    display: flex;
+    justify-content: space-between;
+}
+.ll{
+    margin-top: 10px;
+}
+
+.div5{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:90px; 
+    border-radius: 10px;
+    width: 100%;
+}
+
+.div6{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:50px; 
+    width: 100%;
+   /* position: fixed;
+    bottom: 0;
+    left: 0;
+    */
+}
+
+
+/*REG CSS*/
+.divr{
+    background-color: rgb(230, 235, 240); 
+    width: 300px; 
+    height:420px; 
+    color: navy;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card-header{
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.card-body{
+    padding: 20px;
+}
+.cs{
+    border-radius: 90px; 
+    width: 60px; 
+    height: 60px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.cs:hover{
+    background-color: aliceblue;
+    color: navy;
+    width: 70px;
+    height: 70px;
+}
+
+
+}

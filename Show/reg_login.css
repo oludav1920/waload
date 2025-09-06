@@ -1,0 +1,93 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.div{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.div1{
+    border-radius: 10px; 
+    background-color: navy;
+    color: aliceblue; 
+    height: 3%;
+    width: 100%;
+}
+.ul1{
+    display: flex;
+    justify-content: space-between;
+}
+.li1{
+    font-size: x-large;
+    margin-top: 25px;
+}
+.li2{
+    margin-top: 8px;
+}
+.fieldset{
+    outline: none;
+    border: none;
+    z-index: 100;
+}
+.legend1{
+    float: right;
+}
+.btn1{
+    display: block;
+}
+.div2{
+    text-align: right;
+    background-color: white;
+}
+.btn2{
+    display: none;
+    background-color: red;
+}
+.ul2{
+    color: white;
+    text-align: left;}
+.li3{
+    display: none;
+}
+.a1{
+    text-decoration: none;
+    color: navy;
+}
+.div3{
+    text-align: center;
+}
+.img1{
+    width: 25%; 
+    height: 25%; 
+    border-radius: 50%;
+}
+h1{
+    color:navy; 
+    font-size: x-large;
+}
+.divr{
+    background-color: rgb(230, 235, 240); 
+    width: 92%; 
+    height: 60%; 
+    color: navy;
+}
+.lab{
+    font-size: large;
+}
+.input{
+    width: 98%; 
+    height: 25px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: aliceblue;
+}
+.regbtn{
+    background-color: navy; color:aliceblue; 
+    width: 90%; 
+    height: 25px; 
+    border-radius: 20px; 
+    font-size: large;
+}

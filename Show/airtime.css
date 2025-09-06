@@ -1,0 +1,59 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.div1{
+    border-radius: 10px; 
+    background-color: navy;
+    color: aliceblue; 
+    height: 10%;
+    width: 100%;
+}
+.img{
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50px;
+}
+.ull{
+    display: flex;
+    justify-content: space-between;
+}
+.sp1{ 
+    margin-top: 10px;
+    color: aliceblue;
+}
+.td1{
+    text-decoration: none;
+     color:aliceblue; 
+     margin-left: -60%;
+}
+.b1{
+    border-radius: 10px; 
+    margin-left: -95px;
+    height: 30px;
+}
+.divr{
+    background-color: rgb(230, 235, 240); 
+    width: 92%; 
+    height: 60%; 
+    color: navy;
+}
+.lab{
+    font-size: large;
+}
+.input{
+    width: 98%; 
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: aliceblue;
+}
+.regbtn{
+    background-color: navy; color:aliceblue; 
+    width: 90%; 
+    height: 30px; 
+    border-radius: 20px; 
+    font-size: large;
+}

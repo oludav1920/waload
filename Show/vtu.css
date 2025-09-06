@@ -1,0 +1,341 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.div{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.div1{
+    border-radius: 10px; 
+    background-color: navy;
+    color: aliceblue; 
+    height: 10%;
+    width: 100%;
+    margin-top: 0;
+}
+.img{
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50px;
+}
+.ull{
+    display: flex;
+    justify-content: space-between;
+}
+.sp1{ 
+    margin-top: 10px;
+    color: aliceblue;
+}
+.td1{
+    text-decoration: none;
+     color:aliceblue; 
+     margin-left: -60%;
+}
+.b1{
+    border-radius: 10px; 
+    margin-left: -95px;
+    height: 30px;
+}
+.div2{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:80px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.sp3{
+    font-size: larger; 
+    margin-top: 200px;
+}
+.div3{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:250px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.ul{
+    display: flex;
+    justify-content: space-around;
+}
+.b2{
+    margin-top: 10px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -32px;
+}
+.b22{
+    margin-top: 10px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -40px;
+}
+.b3{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -25px;
+}
+.b33{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -24px;
+}
+.b4{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -12px;
+}
+.b44{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -13px;
+}
+.b5{
+    margin-top: 10px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -23px;
+}
+.b55{
+    margin-top: 10px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -33px;
+}
+.b6{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -15px;
+}
+.b66{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -21px;
+}
+.b7{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: 13px;
+}
+.b77{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+.b8{
+    margin-top: 10px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -17px;
+}
+.b88{
+    margin-top: 10px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -27px;
+}
+.b9{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: 25px;
+}
+.b99{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: 2px;
+}
+.b10{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: 35px;
+}
+.b100{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+}
+
+.ull{
+    display: flex;
+    justify-content: space-between;
+}
+.div4{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:90px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.div5{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:80px; 
+    border-radius: 10px;
+    width: 100%;
+}
+.ll{
+    margin-top: 5px;
+    margin-left: -15px;
+}
+.op{
+    margin-left: -70px; 
+    margin-top: 15px; 
+    border-radius: 90px; 
+    width: 60px; 
+    height: 60px; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.bt1{
+    margin-top: 10px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -32px;
+}
+.bt11{
+    margin-top: 10px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -33px;
+}
+.bt2{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -15px;
+}
+.bt22{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -24px;
+}
+.bt3{
+    margin-top: 10px;
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -13px;
+}
+.bt33{
+    margin-top: 1px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -20px;
+}
+.bt4{
+    margin-top: 10px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background-color: navy; 
+    color: aliceblue;
+    margin-left: -23px;
+}
+.bt44{
+    margin-top: 10px; 
+    color: navy;
+    text-decoration: none;
+    margin-left: -33px;
+}
+.bdiv{
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+}
+.div6{
+    background-color: rgb(230, 235, 240); 
+    margin-top: 10px; 
+    height:53px; 
+    width: 100%;
+}
+.br1{
+    margin-top: 10px; 
+    border-radius: 30px; 
+    color: navy; 
+    border-color: navy;
+    margin-left: -32px;
+}
+.br11{
+    margin-top: 10px; 
+    color: navy; 
+    text-decoration: none;
+    margin-left: -33px;
+}
+.br2{
+    margin-top: 10px; 
+    border-radius: 30px; 
+    color: navy; 
+    border-color: navy;
+    margin-left: -9px;
+}
+.br22{
+    margin-top: 10px; 
+    color: navy; 
+    text-decoration: none;
+    margin-left: -24px;
+}
+.br3{
+    margin-top: 10px; 
+    border-radius: 30px; 
+    color: navy; 
+    border-color: navy;
+    margin-left: -20px;
+}
+.br33{
+    margin-top: 10px; 
+    color: navy; 
+    text-decoration: none;
+    margin-left: -28px;
+}
+.br4{
+    margin-top: 10px; 
+    border-radius: 30px; 
+    color: navy; 
+    border-color: navy;
+    margin-left: -23px;
+}
+.br44{
+    margin-top: 10px; 
+    color: navy; 
+    text-decoration: none;
+    margin-left: -33px;
+}

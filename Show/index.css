@@ -1,0 +1,147 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.div{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.div1{
+    border-radius: 10px; 
+    background-color: navy;
+    color: aliceblue; 
+    height: 6%;
+    width: 100%;
+}
+.ul1{
+    display: flex;
+    justify-content: space-between;
+}
+.li1{
+    font-size: x-large;
+    margin-top: 10%;
+}
+.li2{
+    margin-top: 7%;
+}
+.fieldset{
+    outline: none;
+    border: none;
+    z-index: 100;
+}
+.legend1{
+    float: right;
+}
+.btn1{
+    display: block;
+}
+.div2{
+    text-align: right;
+    background-color: white;
+}
+.btn2{
+    display: none;
+    background-color: red;
+}
+.ul2{
+    color: white;
+    text-align: left;}
+.li3{
+    display: none;
+}
+.a1{
+    text-decoration: none;
+    color: navy;
+}
+.div3{
+    margin-top: 0; 
+    height: 52%; 
+    width: 100%; 
+    background-color: aliceblue; 
+    color: navy;
+    text-align: center;
+}
+.img1{
+    width: 25%; 
+    height: 25%; 
+    border-radius: 50%;
+}
+.sp1{
+    font-size: x-large;
+}
+.sp2{
+    font-size: large;
+}
+.regbtn{
+    background-color: navy; 
+    color:aliceblue; 
+    width: 40%; 
+    border-radius: 40px; 
+    height: 13%;
+}
+.a2{
+    text-decoration: none; 
+    color: aliceblue; 
+    font-size: x-large;
+}
+.logbtn{
+    background-color: navy; 
+    color:aliceblue; 
+    width: 30%; 
+    border-radius: 40px; 
+    height: 12%;
+}
+.div4{
+    text-align: center;
+}
+.sp3{
+    font-size: xx-large;
+}
+.div5{
+    text-align: left;
+    border: 5px solid #ccc; 
+    padding: 20px; 
+    box-shadow: 0 0 10px navy; 
+    border-radius: 20px; 
+    border-bottom: 2px solid navy;
+}
+.cs{
+    border-radius: 90px; 
+    width: 30%; 
+    height: 18%; 
+    background-color: navy; 
+    color: aliceblue;
+}
+.div6{
+    background-color: navy; 
+    color: aliceblue; 
+    padding: 20px; 
+    box-shadow: 0 0 10px navy;
+    text-align: center;
+}
+.div7{
+    background-color: black;  
+    color: aliceblue; 
+    padding-top: 10px;
+}
+.div8{
+    margin-left: 2%; 
+    width: 95%;
+    height: 5%; 
+    border-radius: 10px; 
+    background-color: white; 
+    color: black;
+}
+.btn3{
+    margin-top: 10%; 
+    border-radius: 90px; 
+    width: 20%; 
+    height: 10%; 
+    background-color: aliceblue; 
+    color: navy;
+}
+
+
