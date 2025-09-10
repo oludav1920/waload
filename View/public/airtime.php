@@ -152,7 +152,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
       event.preventDefault()
       let dataToSend =`net=${net}&num=${num}&numb=${numb}&email=${email}`;
         $.ajax({
-          url:"/Airtime/Query/airtimebackend.php",
+          url:"/Controller/Networkprovider/",
           method:"POST",
           data: dataToSend,
           dataType:"html",
