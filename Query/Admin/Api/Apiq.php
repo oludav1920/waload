@@ -17,11 +17,13 @@ Class Apiq{
                 $any = [];
                 if($qrow > 0){
                     while($qrow=$q->fetch(PDO::FETCH_ASSOC)){
+                        $ind=$qrow['Index_Id'];
                         $nato=$qrow['Apiname'];
                         $stato=$qrow['Apikey'];
                         $disto=$qrow['Statu'];
 
                         $store = array(
+                            "id"=>$ind,
                             "apiname"=>$nato,
                             "apikey"=>$stato,
                             "statu"=>$disto,

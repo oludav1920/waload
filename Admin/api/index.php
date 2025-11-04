@@ -33,6 +33,7 @@
                 
 
             for($i = 0; $i < count($response); $i++){
+                $ind = $response[$i]["id"];
                 $neto = $response[$i]["apiname"];
                 $stato = $response[$i]["apikey"];
                 $disto = $response[$i]["statu"];
@@ -49,7 +50,9 @@
                 echo $disto;
                 echo '</td>';
                 echo '<td>'; 
+                echo '<a href="/Admin/api/apiedit.php? inx='.$ind.'">';
                 echo '<button>Edit</button>';
+                echo '';
                 echo '</td>';
                 echo '<td>'; 
                 echo '<button>Delete</button>';
