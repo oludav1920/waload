@@ -18,7 +18,7 @@ if(isset($_GET["net"])){
 
     $qq=$conn->prepare("SELECT * FROM payment_gateway WHERE Index_Id=:id");
     $qq->bindParam(":id", $paymenttoedit, PDO::PARAM_STR);
-    qq->execute();
+    $qq->execute();
 
     if($qq->rowCount() > 0){
         $row=$qq->fetch(PDO::FETCH_ASSOC);
@@ -26,7 +26,7 @@ if(isset($_GET["net"])){
         $pay=$row['Paymentplan'];
         $dis=$row['Discount'];
         $api=$row['Api'];
-        $sta=$row['Status'];
+        $sta=$row['Statu'];
     }
 
     else{
@@ -54,18 +54,18 @@ if(isset($_GET["net"])){
 <form action="/Controller/Admin/Paymentgateway/PaymenteditController.php" method="POST" enctype="multipart/form-data" >
       <P><label class="lab">Payment_Gateway:</label></br>
     <select id="net" name="net" class="input">
-        <option value="<?php echo $pay; ?>"><?php echo $pay ?></option>
+        <option value="<?php echo $pay; ?>"><?php echo $pay; ?></option>
         <option value="PayPal">PayPal</option>
         <option value="Payoneer">Payoneer</option>
         <option value="Mollie">Mollie</option>
     </select><br/></P><hr/>
    <P><tr><label class="lab">Discount:</label><br/>
-    <input type="number" name="dis" class="input" <?php echo $dis; ?>/><br/></P><hr/>
+    <input type="number" name="dis" class="input" value="<?php echo $dis; ?>"/><br/></P><hr/>
     <P><tr><label class="lab">API:</label><br/>
-    <input type="text" name="api" class="input" <?php echo $api; ?>/><br/></P><hr/>
+    <input type="text" name="api" class="input" value="<?php echo $api; ?>"/><br/></P><hr/>
         <P><label  class="lab">Satus:</label><br/>
     <select name="sta" class="input">
-        <option value="<?php echo $pay ?>"><?php echo $sta; ?></option>
+        <option value="<?php echo $sta; ?>"><?php echo $sta; ?></option>
         <option value="ON">ON</option>
         <option value="OFF">OFF</option>
     </select><br/></P><hr/>

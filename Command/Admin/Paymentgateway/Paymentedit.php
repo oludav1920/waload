@@ -3,18 +3,18 @@ session_start();
 include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
 include($_SERVER["DOCUMENT_ROOT"]."/Schema/tables.php");
 
-Class Resultedit{
-    public function userResultedit($net, $dis, $api, $sta){
+Class Paymentedit{
+    public function userPaymentedit($net, $dis, $api, $sta){
         try{
-            global $resultTable;
-            global  $resultTableId;
+            global $paymentTable;
+            global  $paymentTableId;
             global $conn;
 
             if($net !="" && $dis !="" && $api !="" && $sta !=""){
-                //update the resultplan table
-                $q=$conn->prepare("UPDATE  $resultTable
-                SET Resultplan=:fu, Discount=:em, Api=:do, Stat=:us 
-                WHERE Resultplan=:fu AND Api=:do");
+                //update the paymentgateway table
+                $q=$conn->prepare("UPDATE  $paymentTable
+                SET Paymentplan=:fu, Discount=:em, Api=:do, Statu=:us 
+                WHERE Paymentplan=:fu AND Api=:do");
                 $q->bindparam(":fu", $net, PDO::PARAM_STR);
                 $q->bindparam(":em", $dis, PDO::PARAM_STR);
                 $q->bindparam(":do", $api, PDO::PARAM_STR);
@@ -24,7 +24,7 @@ Class Resultedit{
                     return json_encode(array("status"=>"success", "response"=>"
                      ?> 
                      <script>
-                     window.location='/Admin/result/index.php'; 
+                     window.location='/Admin/payment_gateway/index.php'; 
                      </script> 
                      <?php 
                      exit(); 
@@ -34,7 +34,7 @@ Class Resultedit{
                 return json_encode(array("status"=>"failed", "response"=>"
                 ?>  
                 <script>
-                window.location='/Admin/result/resultedit.php? error'; 
+                window.location='/Admin/payment_gateway/paymentedit.php? error'; 
                 </script> 
                 <?php 
                 exit();"), true);
@@ -47,5 +47,5 @@ Class Resultedit{
     }
 }
 
-$newResultedit = new Resultedit();
+$newPaymentedit = new Paymentedit();
 ?>

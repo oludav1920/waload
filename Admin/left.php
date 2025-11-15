@@ -130,7 +130,7 @@
             <span style="color: white; font-size: large;">Wallet</span>
             <div class="dropdown-content">
                 <a href="/Admin/wallet/">View Wallet</a><hr/>
-                <a href="/Admin/wallet/walform.php">Add Wallet</a><hr/>
+                <a href="/Admin/wallet/walletform.php">Add Wallet</a><hr/>
         </div>
     </li><hr/>
     <li><div class="dropdown">

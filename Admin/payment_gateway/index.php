@@ -38,7 +38,7 @@
             $dis = $response[$i]["discount"];
             $api = $response[$i]["api"];
             $sta = $response[$i]["status"];
-        }
+
         echo '<tr style="text-align: center;">';
         echo '<td>';
         echo $pay;
@@ -53,16 +53,17 @@
         echo $sta;
         echo '</td>';
         echo '<td>';
-        echo '<a href="/Admin/payment_gateway/paymentedit.php?user='.$ind.'">';
+        echo '<a href="/Admin/payment_gateway/paymentedit.php?net='.$ind.'">';
         echo '<button>Edit</button>';
         echo '</a>';
         echo '</td>';
         echo '<td>';
-        echo '<a href="/Controller/Admin/Paymentgateway/Paymentdelete.php?user='.$ind.'">';
+        echo '<a href="/Controller/Admin/Paymentgateway/PaymentdeleteController.php?user='.$ind.'">';
         echo '<button>Delete</button>';
         echo '</a>';
         echo '</td>';
         echo '</tr>';
+        }
         echo '</table>';
     }
     else{

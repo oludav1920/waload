@@ -42,19 +42,11 @@
         <h1>LOGIN PAGE</h1>
     <div style="text-align: center;">
         <?php
-        if(isset($_GET['ERROR']))
-        {
+        if(isset($_GET['status'])){
+          $res = trim($_GET['status']);
           echo '<font style="color: red;">';
-            echo "Incorrect Email or Password";
-            echo "</font>";
-        }
-        ?>
-        <?php
-        if(isset($_GET['ERRORPASS']))
-        {
-          echo '<font style="color: red;">';
-            echo "Fill all empty box";
-            echo "</font>";
+          echo $res;
+          echo "</font>";
         }
         ?>
         </div>

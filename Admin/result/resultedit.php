@@ -13,26 +13,26 @@
         $at;
        
         if(isset($_GET["net"])){
-        $electtoedit = trim(htmlspecialchars($_GET["net"]));
-         //echo $dplantoedit;
+            $electtoedit = trim(htmlspecialchars($_GET["net"]));
+            //echo $dplantoedit;
          
-        //check if the api exist
-        $q = $conn->prepare("SELECT * FROM result WHERE Index_Id=:em");
-        $q->bindParam(':em', $electtoedit, PDO::PARAM_STR);
-        $q->execute();
-        if($q->rowCount() > 0){
-            $qrow=$q->fetch(PDO::FETCH_ASSOC);
-                        $ind=$qrow['Index_Id'];
-                        $nat=$qrow['Resultplan'];
-                        $stat=$qrow['Stat'];
-                        $dist=$qrow['Discount'];
-                        $at=$qrow['Api'];
-                        
+            //check if the api exist
+            $q = $conn->prepare("SELECT * FROM result WHERE Index_Id=:em");
+            $q->bindParam(':em', $electtoedit, PDO::PARAM_STR);
+            $q->execute();
+            if($q->rowCount() > 0){
+                $qrow=$q->fetch(PDO::FETCH_ASSOC);
+                            $ind=$qrow['Index_Id'];
+                            $nat=$qrow['Resultplan'];
+                            $stat=$qrow['Stat'];
+                            $dist=$qrow['Discount'];
+                            $at=$qrow['Api'];
+                            
             }
             else{
-            
+                
             }
-    }
+        }
     ?> 
 
 

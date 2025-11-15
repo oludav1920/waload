@@ -12,11 +12,20 @@ if($_SERVER["REQUEST_METHOD"] ==="POST"){
         $backendResponse = $newRegister->userRegister($fname, $uname, $email, $dob, $nation, $pass);
         $backendResponseDecode = json_decode($backendResponse, true);
         if($backendResponseDecode["status"] =="success"){
-            echo $backendResponseDecode["response"];
+            ?>
+            <script>
+                window.location='/View/public/login.php';
+            </script>
+            <?php
             return;
         }
         else{
-            echo $backendResponseDecode["response"];
+            $response = $backendResponseDecode["response"];
+            ?>
+            <script>
+                window.location="/View/public/registration.php?status=<?php echo $response; ?>";
+            </script>
+            <?php
             return;
         }
     }

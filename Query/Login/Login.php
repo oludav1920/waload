@@ -36,23 +36,11 @@ Class Login{
                     return json_encode(array("status"=>"success", "response"=>$store), true);
                 }
                 else{
-                    return json_encode(array("status"=>"failed", "response"=>"
-                    ?>  
-                    <script>
-                    window.location='/View/public/login.php? ERROR'; 
-                    </script> 
-                    <?php 
-                    exit();"), true);
+                    return json_encode(array("status"=>"failed", "response"=>"Incorrect Email or Password"), true);
                 }
             }
             else{
-                return json_encode(array("status"=>"failed", "response"=>"
-                ?>  
-                <script>
-                window.location='/View/public/login.php? ERRORPASS'; 
-                </script> 
-                <?php 
-                exit();"), true);
+                return json_encode(array("status"=>"failed", "response"=>"Fill all empty box"), true);
             }
         }
         catch(Exception $e){

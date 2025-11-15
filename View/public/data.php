@@ -12,54 +12,64 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
     <script src="/Show/jquery.js"></script>
 </head>
 <body style="background-color: rgb(230, 235, 240);">
-  <table><tr>
-    <td><img src="/Image/imageod1.jpg" alt="image here" class="img"/></td>
-    <td><span>Hi,
-      <?php
-      echo $_SESSION['USERNAME'];
-      ?>
+  <table>
+    <tr>
+      <td>
+        <img src="/Image/imageod1.jpg" alt="image here" class="img"/>
+      </td>
+      <td>
+        <span>Hi,
+          <?php
+          echo $_SESSION['USERNAME'];
+          ?>
+        </span>
+      </td>
+    </tr>
+  </table>
 
-    </span></td>
-  </tr></table>
+  <div class="div1">
+
+    <ul type="none" class="ull">
+      <li><span class="sp1">balance</span></li>
+      <li><a href="history.php" class="td1">History </a></li>
+    </ul>
+    <ul type="none" class="ull">
+      <li><span class="sp2">0.00</span></li>
+      <li><button class="b1"><a href="depo.html" style="text-decoration: none;">+ Deposit</a></button></li>
+    </ul>
+  </div>
+
+  <div style="text-align: center; color: navy;">
+    <h1>Data</h1>
+    <fieldset class="divr">
+      <form>
+        <P>
+          <label class="lab">Network:</label><br/>
+          <select class="input" id="net" name="dnet">
+            <option value="">Choose One</option>
+            <option value="">9Mobile</option>
+            <option value="">MTN</option>
+            <option value="">GLO</option>
+            <option value="">Airtel</option>
+            <option value="">Zain</option>
+          </select><br/>
+        </P><hr/>
+        <P>
+          <label class="lab">Number:</label><br>
+          <input type="number" id="num" name="dnum" class="input" placeholder="insert number" value=""/><br/>
+        </P><hr/>
+        <P>
+          <label class="lab">Amount:</label><br>
+          <input type="number" id="numb" name="dnumb" class="input" placeholder="insert the amount" value=""/><br/>
+        </P><hr/>
+        <input type="hidden" id="email" name="ema" value="<?php echo $_SESSION['EMAIL'] ?>"/>
+        <button onclick="openModal()" type="submit" class="regbtn">submit</button>
+      </form>
+    </fieldset>
+  </div>
+  <footer>
         
-        <div class="div1">
-
-          <ul type="none" class="ull">
-            <li><span class="sp1">balance</span></li>
-            <li><a href="history.php" class="td1">History </a></li>
-          </ul>
-          <ul type="none" class="ull">
-            <li><span class="sp2">0.00</span></li>
-            <li><button class="b1"><a href="depo.html" style="text-decoration: none;">+ Deposit</a></button></li>
-          </ul>
-          
-        </div>
-
-    <div style="text-align: center; color: navy;">
-        <h1>Data</h1>
-        <fieldset class="divr">
-<form action="" method="" enctype="multipart/form-data" >
-    <P><label class="lab">Network:</label><br/>
-    <select class="input" id="net" name="dnet">
-        <option value="">Choose One</option>
-        <option value="">9Mobile</option>
-        <option value="">MTN</option>
-        <option value="">GLO</option>
-        <option value="">Airtel</option>
-        <option value="">Zain</option>
-    </select><br/></P><hr/>
-    <P><label class="lab">Number:</label><br>
-<input type="number" id="num" name="dnum" class="input" placeholder="insert number" value=""/><br/></P><hr/>
-<P><label class="lab">Amount:</label><br>
-<input type="number" id="numb" name="dnumb" class="input" placeholder="insert the amount" value=""/><br/></P><hr/>
-<input type="hidden" id="email" name="ema" value="<?php echo $_SESSION['EMAIL'] ?>"/>
-<button onclick="openModal()" type="submit" name="buydata" class="regbtn">submit</button>
-</form>
-</fieldset>
-    </div>
-    <footer>
-        
-    </footer>
+  </footer>
     <script src="oludav.js"></script>
 
     <style>
@@ -135,7 +145,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
       event.preventDefault()
       let dataToSend =`net=${net}&num=${num}&numb=${numb}&email=${email}`;
         $.ajax({
-          url:"/Controller/Networkprovider/",
+          url:"/Controller/Data/BuydataController.php",
           method:"POST",
           data: dataToSend,
           dataType:"html",

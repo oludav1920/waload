@@ -45,20 +45,11 @@
         <h1>REGISTRATION PAGE</h1>
         <div style="text-align: center;">
         <?php
-        if(isset($_GET['error']))
-        {
+        if(isset($_GET['status'])){
+          $res = trim($_GET["status"]);
           echo '<font style="color: red;">';
-            echo "Fill all box";
-            echo "</font>";
-        }
-        ?>
-
-<?php
-        if(isset($_GET['Errorgg']))
-        {
-          echo '<font style="color: red;">';
-            echo "This email has already been registered";
-            echo "</font>";
+          echo $res;
+          echo "</font>";
         }
         ?>
         </div>

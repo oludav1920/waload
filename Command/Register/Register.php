@@ -7,6 +7,8 @@ Class Register{
         try{
             global $usersTable;
             global $usersTableId;
+            global $walletTable;
+            global $walletTableId;
             global $conn;
 
             if($fname !="" && $uname !="" && $email !="" && $dob !="" && $nation !="" && $pass !=""){
@@ -19,7 +21,7 @@ Class Register{
                     $repass = md5($pass);
                     $otp = "";
                     $qq = $conn->prepare("INSERT INTO $usersTable(
-                    Fullname, Username, Email, Dob, Nationality, Passwod, OTP ) VALUES(
+                    Fullname, Username, Email, Dob, Nationality, Passwod, OTP) VALUES(
                     :fn, :un, :em, :do, :na, :pd, :ot
                     )");
                     $qq->bindParam(':fn', $fname, PDO::PARAM_STR);
@@ -31,39 +33,34 @@ Class Register{
                     $qq->bindParam(':ot', $otp, PDO::PARAM_STR);
                     $qq->execute();
 
+                    $balance ="";
+                    $totaldeposit ="";
+                    $totalspent ="";
+                    $currency ="";
+                    $ww = $conn->prepare("INSERT INTO $walletTable(
+                     Email, Balance, Totaldeposit, Totalspent, Currency) VALUES(
+                     :em, :ba, :td, :ts, :cu
+                    )");
+                    $ww->bindParam(':em', $email, PDO::PARAM_STR);
+                    $ww->bindParam(':ba', $balance, PDO::PARAM_STR);
+                    $ww->bindParam(':td', $totaldeposit, PDO::PARAM_STR);
+                    $ww->bindParam(':ts', $totalspent, PDO::PARAM_STR);
+                    $ww->bindParam(':cu', $currency, PDO::PARAM_STR);
+                    $ww->execute();
+
                     if($qq){
-                        return json_encode(array("status"=>"success", "response"=>"
-                        ?> 
-                        <script>
-                        window.location='/View/public/login.php'; 
-                        </script> 
-                        <?php 
-                        exit();
-                        "), true);
+                        return json_encode(array("status"=>"success", "response"=>""), true);
                     }
                     else{
                         return json_encode(array("status"=>"failed", "response"=>"oops!! something went wront"), true);
                     }
                 }
                 else{
-                    return json_encode(array("status"=>"failed", "response"=>"
-                    ?> 
-                     <script>
-                    window.location='/View/public/registration.php? Errorgg'; 
-                    </script> 
-                    <?php 
-                    exit();
-                    "), true);
+                    return json_encode(array("status"=>"failed", "response"=>"This email has already been registered"), true);
                 }
             }
             else{
-                $output = array("status"=>"failed", "response"=>"
-                ?>  
-                <script>
-                window.location='/View/public/registration.php? error'; 
-                </script> 
-                <?php 
-                exit();");
+                $output = array("status"=>"failed", "response"=>"Fill all box");
                 return json_encode($output, true);
             }
         }

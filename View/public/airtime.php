@@ -13,17 +13,20 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
     <script src="/Show/jquery.js"></script>
 </head>
 <body style="background-color: rgb(230, 235, 240);">
-  <table><tr>
-    <td><img src="/Image/imageod1.jpg" alt="image here" class="img"/></td>
-    <td><span>Hi,
-      <?php
-      echo $_SESSION['USERNAME'];
-      ?>
-
-    </span></td>
-  </tr></table>
+  <table>
+    <tr>
+      <td><img src="/Image/imageod1.jpg" alt="image here" class="img"/></td>
+      <td>
+        <span>Hi,
+        <?php
+        echo $_SESSION['USERNAME'];
+        ?>
+        </span>
+      </td>
+    </tr>
+  </table>
         
-        <div class="div1">
+  <div class="div1">
 
           <ul type="none" class="ull">
             <li><span class="sp1">balance</span></li>
@@ -34,7 +37,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
             <li><button class="b1"><a href="depo.html" style="text-decoration: none;">+ Deposit</a></button></li>
           </ul>
           
-        </div>
+  </div>
 
     <div style="text-align: center; color: navy;">
         <h1>Airtime</h1>
@@ -57,7 +60,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
         <fieldset class="divr">
 <form>
     <P><label class="lab">Network:</label></br>
-    <select id="net" class="input">
+    <select id="net" name="net" class="input">
         <option value="">Choose One</option>
         <option value="9Mobile">9Mobile</option>
         <option value="MTN">MTN</option>
@@ -65,10 +68,10 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
         <option value="Airtel">Airtel</option>
     </select><br/></P><hr/>
     <P><label class="lab">Number:</label></br>
-<input type="number" id="num" class="input" placeholder="insert number" value=""/><br/></P><hr/>
+<input type="number" id="num" name="num" class="input" placeholder="insert number" value=""/><br/></P><hr/>
 <P><label class="lab">Amount:</label></br>
-<input type="number" id="numb" class="input" placeholder="insert the amount" value=""/><br/></P><hr/>
-<input type="hidden" id="email" value="<?php echo $_SESSION['EMAIL'] ?>"/>
+<input type="number" id="numb" name="numb" class="input" placeholder="insert the amount" value=""/><br/></P><hr/>
+<input type="hidden" id="email" name="ema" value="<?php echo $_SESSION['EMAIL'] ?>"/>
 <button onclick="openModal()" type="submit" class="regbtn">submit</button>
 </form>
 </fieldset>
@@ -152,7 +155,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/Schema/config.php");
       event.preventDefault()
       let dataToSend =`net=${net}&num=${num}&numb=${numb}&email=${email}`;
         $.ajax({
-          url:"/Controller/Networkprovider/",
+          url:"/Controller/Airtime/BuyairtimeController.php",
           method:"POST",
           data: dataToSend,
           dataType:"html",

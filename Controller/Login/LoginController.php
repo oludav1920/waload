@@ -25,7 +25,12 @@ if($_SERVER["REQUEST_METHOD"] ==="POST"){
             return;
         }
         else{
-            echo $backendResponseDecode["response"];
+            $response = $backendResponseDecode["response"];
+            ?>
+            <script>
+                window.location="/View/public/login.php?status=<?php echo $response; ?>";
+            </script>
+            <?php
             return;
         }
     }
@@ -35,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] ==="POST"){
     }
 }
 else{
-    echo "Only POST methoed is allowed";
+    echo "Only POST method is allowed";
     return;
 }
 ?>
