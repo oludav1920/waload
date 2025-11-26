@@ -10,14 +10,14 @@ Class Wallet{
             global $conn;
 
                 //check if user already exist
-                $q = $conn->prepare("SELECT * FROM $walletTable ORDER BY Wallet_Id ASC");
+                $q = $conn->prepare("SELECT * FROM $walletTable ORDER BY Wallet_id ASC");
                 $q->execute();
                 $qrow=$q->rowCount();
 
                 $any = [];
                 if($qrow > 0){
                     while($qrow=$q->fetch(PDO::FETCH_ASSOC)){
-                        $ind=$qrow['Index_Id'];
+                        $ind=$qrow['Wallet_id'];
                         $ema=$qrow['Email'];
                         $bal=$qrow['Balance'];
                         $tod=$qrow['Totaldeposit'];

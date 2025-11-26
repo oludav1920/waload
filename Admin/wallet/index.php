@@ -60,7 +60,7 @@
         echo $cur;
         echo '</td>';
         echo '<td>';
-        echo '<a href="/Admin/Wallet/walletedit.php?net='.$ind.'">';
+        echo '<a href="/Admin/wallet/walletedit.php?net='.$ind.'">';
         echo '<button>Edit</button>';
         echo '</a>';
         echo '</td>';
