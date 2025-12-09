@@ -39,7 +39,7 @@ session_start();
         <fieldset class="divr">
 <form action="" method="" enctype="multipart/form-data" >
     <P><label class="lab">Select Electricity:</label><br/>
-    <select class="input">
+    <select class="input" name="electricitytype">
         <option value="">Choose One</option><hr/>
         <option value="">ABUJA_ELECTRICITY</option><hr/>
         <option value="">BENIN_ELECTRICITY (BEDC)</option><hr/>
@@ -53,15 +53,16 @@ session_start();
         <option value="">PORT_HARCOURT_ELECTRICITY</option><hr/>
     </select><br/></P><hr/>
     <P><label class="lab">Meter Type:</label><br/>
-    <select class="input">
+    <select class="input" name="metertype">
         <option value="">Choose One</option>
         <option value="">Prepaid</option>
         <option value="">Postpaid</option>
     </select><br/></P><hr/>
     <P><label class="lab">Meter Number:</label><br>
-<input type="number" class="input" placeholder="insert the meter number" value=""/><br/></P><hr/>
+<input type="number" name="meternumber" class="input" placeholder="insert the meter number" value=""/><br/></P><hr/>
 <P><label class="lab">Amount:</label><br>
-<input type="number" class="input" placeholder="insert the amount" value=""/><br/></P><hr/>
+<input type="number" name="amount" class="input" placeholder="insert the amount" value=""/><br/></P><hr/>
+<input type="hidden" id="email" name="ema" value="<?php echo $_SESSION['EMAIL'] ?>"/>
 <button class="regbtn">submit</button>
 </form>
 </fieldset>

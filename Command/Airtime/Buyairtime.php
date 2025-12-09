@@ -47,32 +47,32 @@ Class Buyairtime{
                         if($balance >= $amount){
                             //send request to api
 
-                            if($apinane ==="roksub"){
+                            if($apiname ==="roksub"){
                                 $newRksub = new Roksub();
                                 $buy = $newRksub->buyData();
                                 $res = json_decode($buy, true);
                             }
-                            elseif($apinane ==="husmodata"){
+                            elseif($apiname ==="husmodata"){
                                 $newHus = new Husmodata();
                                 $buy = $newHus->buyData();
                                 $res = json_decode($buy, true);
                             }
-                            elseif($apinane ==="gladtidings"){
+                            elseif($apiname ==="gladtidings"){
                                 $newGlad = new Gladtidings();
                                 $buy = $newGlad->buyData();
                                 $res = json_decode($buy, true);
                             }
-                            elseif($apinane ==="legitdataway"){
+                            elseif($apiname ==="legitdataway"){
                                 $newLegit = new Legitdataway();
                                 $buy = $newLegit->buyData();
                                 $res = json_decode($buy, true);
                             }
-                            elseif($apinane ==="vtpass"){
+                            elseif($apiname ==="vtpass"){
                                 $newVt = new Vtpass();
                                 $buy = $newvt->buyData();
                                 $res = json_decode($buy, true);
                             }
-                            elseif($apinane ==="zoedata"){
+                            elseif($apiname ==="zoedata"){
                                 $newZoe = new Zoedata();
                                 $buy = $newZoe->buyData();
                                 $res = json_decode($buy, true);
@@ -96,7 +96,7 @@ Class Buyairtime{
                                 $qq->bindParam(':ty', $transactionType, PDO::PARAM_STR);
                                 $qq->bindParam(':td', $num, PDO::PARAM_STR);
                                 $qq->bindParam(':am', $amount, PDO::PARAM_STR);
-                                $qq->bindParam(':qt', $otp, PDO::PARAM_STR);
+                                $qq->bindParam(':qt', $quantity, PDO::PARAM_STR);
                                 $qq->bindParam(':dt', $date, PDO::PARAM_STR);
                                 $qq->execute();
 

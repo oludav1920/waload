@@ -38,18 +38,17 @@ session_start();
         <fieldset class="divr">
 <form action="" method="" enctype="multipart/form-data" >
     <P><label class="lab">Select Cable:</label></br>
-    <select class="input">
+    <select class="input" name="cabletype">
         <option value="">Choose One</option>
         <option value="">Gotv</option>
         <option value="">Dstv</option>
         <option value="">Netflix</option>
-        <option value="">Airtel</option>
-        <option value="">Zain</option>
     </select><br/></P><hr/>
     <P><label class="lab">Smartcard Number/IUC:</label></br>
-<input type="number" class="input" placeholder="insert number" value=""/><br/></P><hr/>
+<input type="number" class="input" name="cablenumber" placeholder="insert number" value=""/><br/></P><hr/>
 <P><label class="lab">Amount:</label></br>
-<input type="number" class="input" placeholder="insert the amount" value=""/><br/></P><hr/>
+<input type="number" class="input" name="amount" placeholder="insert the amount" value=""/><br/></P><hr/>
+<input type="hidden" id="email" name="ema" value="<?php echo $_SESSION['EMAIL'] ?>"/>
 <button class="regbtn">submit</button>
 </form>
 </fieldset>

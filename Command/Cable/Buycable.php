@@ -10,14 +10,14 @@ include($_SERVER["DOCUMENT_ROOT"]."/Command/NetworkProvider/Zoedata.php");
 include($_SERVER["DOCUMENT_ROOT"]."/Command/Wallet/Wallet.php");
 
 //get users input
-Class Buydata{
-    public function userBuydata($net, $num, $amount,$email){
+Class Buycable{
+    public function userBuycable($cabletype, $cablenumber, $amount,$email){
         try{
             global $historyTable;
             global $historyTableId;
             global $conn;
 
-            if($net !="" && $num !="" && $email !="" && $amount >=50){
+            if($cabletype !="" && $cablenumber !="" && $email !="" && $amount >=50){
                 //get any active api provider
                 /*$headers=[
                         "content-Type:application/json"
@@ -86,7 +86,7 @@ Class Buydata{
 
                             if($ResponseDecode["status"] =="success"){
                                 //save record into transaction table
-                                $transactionType="Data";
+                                $transactionType= $cabletype;
                                 $date = date("y-m-d H:i:s");
                                 $qq = $conn->prepare("INSERT INTO $historyTable(
                                 Email, Transaction_type, Transaction_destination, Amount, Qantity,Date ) VALUES(
@@ -96,7 +96,7 @@ Class Buydata{
                                 $qq->bindParam(':ty', $transactionType, PDO::PARAM_STR);
                                 $qq->bindParam(':td', $num, PDO::PARAM_STR);
                                 $qq->bindParam(':am', $amount, PDO::PARAM_STR);
-                                $qq->bindParam(':qt', $otp, PDO::PARAM_STR);
+                                $qq->bindParam(':qt', $quantity, PDO::PARAM_STR);
                                 $qq->bindParam(':dt', $date, PDO::PARAM_STR);
                                 $qq->execute();
 
@@ -105,7 +105,7 @@ Class Buydata{
                                     return json_encode(array("status"=>"success", "response"=>"
                                     ?> 
                                     <script>
-                                    window.location='/View/public/data.php'; 
+                                    window.location='/View/public/cable.php'; 
                                     </script> 
                                     <?php 
                                     exit();
@@ -141,6 +141,6 @@ Class Buydata{
         }
     }
 }
-$newBuydata= new Buydata();
+$newBuycable= new Buycable();
 
 ?>
