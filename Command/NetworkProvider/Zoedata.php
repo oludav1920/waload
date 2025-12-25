@@ -82,7 +82,7 @@ class Zoedata{
     }
 
     //For Cable
-    public function buyCable(){
+    public function buyCable($cabletype, $cablenumber, $amount){
         $dataApiKey;
         $q = $conn->prepare("SELECT Apikey, Apiname FROM apitable WHERE Apiname='zoedata'");
         $q->execute();
@@ -91,13 +91,14 @@ class Zoedata{
             $dataApiKey = trim($rq["Apikey"]);
         }
 
-        if($netwok !="" && $phone !="" && $amount !="" && $amount >=50){
+        if($cabletype !="" && $cablenumber !="" && $amount !="" && $amount >=50){
+            $refrence=md5($phone.strtotime(date("Y-m-d")));
             $amountToApi=$amount-2;
-            $dataToSend=array("product_code" => "gotv_jinja",
+            $dataToSend=array("product_code" => "$cabletype_jinja",
                                 "phone_number" => "08097238712",
-                                "smartcard_number" => "1233445543",
-                                "amount" => "50",
-                                "user_reference" => "89r8r9we",
+                                "smartcard_number" => "$cablenumber",
+                                "amount" => "$amountToApi",
+                                "user_reference" => "$refrence",
                                 "action" => "vend");
         }
         $headers=[
@@ -119,7 +120,7 @@ class Zoedata{
     }
 
     //For Electricity
-    public function buyElectricity(){
+    public function buyElectricity($electricitytype,$metertype,$meternumber,$amount){
                 $dataApiKey;
         $q = $conn->prepare("SELECT Apikey, Apiname FROM apitable WHERE Apiname='zoedata'");
         $q->execute();
@@ -128,12 +129,13 @@ class Zoedata{
             $dataApiKey = trim($rq["Apikey"]);
         }
 
-        if($netwok !="" && $phone !="" && $amount !="" && $amount >=50){
+        if($electricitytype !="" && $metertype !="" && $meternumber !="" && $amount !="" && $amount >=50){
+            $refrence=md5($phone.strtotime(date("Y-m-d")));
             $amountToApi=$amount-2;
-            $dataToSend=array("product_code" => "ibedc_prepaid_custom",
-                                "meter_number" => "1222233wwsaa",
-                                "amount" => "50",
-                                "user_reference" => "89dr8r9ssaww",
+            $dataToSend=array("product_code" => "$electricitytype_prepaid_custom",
+                                "meter_number" => "$meternumber",
+                                "amount" => "$amount",
+                                "user_reference" => "$refrence",
                                 "action" => "vend",
                                 //"MeterType"=>metertype(PREPAID:1,POSTPAID:2)
                                 );
@@ -202,11 +204,12 @@ class Zoedata{
         }
 
         if($netwok !="" && $phone !="" && $amount !="" && $amount >=50){
+            $refrence=md5($phone.strtotime(date("Y-m-d")));
             $amountToApi=$amount-2;
             $dataToSend=array("product_code" => "ibedc_prepaid_custom",
                                 "meter_number" => "1222233wwsaa",
-                                "amount" => "50",
-                                "user_reference" => "89dr8r9ssaww",
+                                "amount" => "$amount",
+                                "user_reference" => "$refrence",
                                 "action" => "vend",
                                 //"MeterType"=>metertype(PREPAID:1,POSTPAID:2)
                                 );

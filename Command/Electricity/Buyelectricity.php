@@ -11,13 +11,13 @@ include($_SERVER["DOCUMENT_ROOT"]."/Command/Wallet/Wallet.php");
 
 //get users input
 Class Buyelectricity{
-    public function userBuyelectricity($net, $num, $amount,$email){
+    public function userBuyelectricity($electricitytype, $metertype,$meternumber, $amount,$email){
         try{
             global $historyTable;
             global $historyTableId;
             global $conn;
 
-            if($net !="" && $num !="" && $email !="" && $amount >=50){
+            if($electricitytype !="" && $metertype !="" && $meternumber !="" && $email !="" && $amount >=50){
                 //get any active api provider
                 /*$headers=[
                         "content-Type:application/json"
@@ -27,6 +27,7 @@ Class Buyelectricity{
                 $curl=curl_init($url);
                 curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
                 curl_setopt($curl,CURLOPT_POST,true);
+                
                 curl_setopt($curl,CURLOPT_POSTFIELDS,json_encode($dataToSend));
                 curl_setopt($curl,CURLOPT_HTTPHEADER,$headers);
 

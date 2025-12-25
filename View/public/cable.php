@@ -40,9 +40,9 @@ session_start();
     <P><label class="lab">Select Cable:</label></br>
     <select class="input" name="cabletype">
         <option value="">Choose One</option>
-        <option value="">Gotv</option>
-        <option value="">Dstv</option>
-        <option value="">Netflix</option>
+        <option value="Gotv">Gotv</option>
+        <option value="Dstv">Dstv</option>
+        <option value="Netflix">Netflix</option>
     </select><br/></P><hr/>
     <P><label class="lab">Smartcard Number/IUC:</label></br>
 <input type="number" class="input" name="cablenumber" placeholder="insert number" value=""/><br/></P><hr/>
